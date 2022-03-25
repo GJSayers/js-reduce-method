@@ -31,7 +31,22 @@ const teamMembers = [
   }
 ];
 
-// Totaling a specific object property
+// Totaling a specific object property explained
+const nums = [0, 1, 2, 3, 4]
+let sum = nums.reduce((acc, curr) => {
+console.log(
+  "Accumulator:", acc,
+  "Current Value:", curr,
+  "Total:", acc + curr,
+    
+  );
+  return acc + curr;
+// the item to start accumulating from should be declared - in this case 0:
+}, 0);
+console.log(sum);
 
+// Totaling a specific object property simplified
+let sum2 = nums.reduce((acc, curr) => acc + curr, 0);
+console.log(sum2);
 
 // Grouping by a property, and totaling it too
